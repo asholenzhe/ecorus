@@ -1,0 +1,144 @@
+.history-list {
+    width: 48vw;
+    margin-top: 1.50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    gap: 1vw;
+}
+
+.history-item {
+    display: flex;
+    flex-direction: row;
+    width: 48vw;
+    border: 1px solid #C4C4C4;
+    border-radius: 1.25vw;
+    padding: 2vw;
+}
+
+.history-item__info{
+    width: 38.31vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    text-align: left;
+}
+
+.history-item__info dt{
+    color: #C4C4C4;
+    font-size: 1.4rem;
+}
+
+.history-item__info dd{
+    color: #000B26;
+    font-size: 1.6rem;
+}
+
+.history-item__coins{
+    display: flex;
+    flex-direction: row;
+    gap: 0.50vw;
+    height: 1.5vw;
+    align-items: center;
+}
+
+.history-item__coins img{
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.history-item__coins h3{
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .history-list {
+        width: 100%;
+        margin-top: 3.13vw;
+        margin-bottom: 5.21vw;
+        gap: 3.13vw;
+    }
+
+    .history-item {
+        width: 100%;
+        border: 0.13vw solid #C4C4C4;
+        border-radius: 2.6vw;
+        padding: 4.17vw;
+        height: 38.28vw;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.13vw;
+    }
+
+    .history-item__info {
+        width: 100%;
+        gap: 2.08vw;
+    }
+
+    .history-item__info dt {
+        font-size: 2.7154rem;
+    }
+
+    .history-item__info dd {
+        font-size: 3.1033rem;
+    }
+
+    .history-item__coins {
+        flex-direction: row !important;
+        height: auto;
+        gap: 1.04vw;
+    }
+
+    .history-item__coins img {
+        width: 3.13vw;
+        height: 3.13vw;
+    }
+
+    .history-item__coins h3 {
+        font-size: 2.7154rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .history-list {
+        margin-top: 5.65vw;
+        margin-bottom: 9.41vw;
+        gap: 5.65vw;
+    }
+
+    .history-item {
+        border: 0.24vw solid #C4C4C4;
+        border-radius: 4.71vw;
+        padding: 7.53vw;
+        height: 69.18vw;
+        gap: 5.65vw;
+    }
+
+    .history-item__info {
+        gap: 3.76vw;
+    }
+
+    .history-item__info dt {
+        font-size: 4.91845rem;
+    }
+
+    .history-item__info dd {
+        font-size: 5.6211rem;
+    }
+
+    .history-item__coins {
+        gap: 1.88vw;
+    }
+
+    .history-item__coins img {
+        width: 5.65vw;
+        height: 5.65vw;
+    }
+
+    .history-item__coins h3 {
+        font-size: 4.91845rem;
+    }
+}

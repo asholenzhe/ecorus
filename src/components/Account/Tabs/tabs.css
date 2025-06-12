@@ -1,0 +1,86 @@
+.tabs{
+    display: flex;
+    flex-direction: column;
+    width: 48vw;
+    margin-top: 8vw;
+    margin-left: 3vw;
+}
+
+.tabs__header{
+    display: flex;
+    flex-direction: row;
+    gap: 1.50vw;
+    text-align: left;
+    color: black;
+    border-bottom: 1px solid #C4C4C4;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--font-family);
+}
+
+.tab__promocode, .tab__history{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #C4C4C4;
+}
+
+.tab__history{
+    width:  5.31vw;
+}
+
+.tab__promocode{
+    width: 7.38vw;
+}
+
+.tab__button--active{
+    color: #000B26;
+}
+
+.tab__active {
+    margin-top: 0.25vw;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        width: 44.66vw;
+        margin-left: 0;
+        margin-top: 3.13vw;
+    }
+
+    .tabs__header {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 3.13vw;
+        border-bottom: 0.13vw solid #C4C4C4;
+        font-size: 3.8791rem;
+    }
+
+    .tab__promocode,
+    .tab__history {
+        width: auto;
+    }
+
+    .tab__active {
+        margin-top: 0.52vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .tabs {
+        width: 80.71vw;
+        margin-top: 5.65vw;
+    }
+
+    .tabs__header {
+        gap: 5.65vw;
+        border-bottom: 0.24vw solid #C4C4C4;
+        font-size: 7.02634rem;
+    }
+
+    .tab__active {
+        margin-top: 0.94vw;
+    }
+}

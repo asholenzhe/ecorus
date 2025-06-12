@@ -1,0 +1,289 @@
+.product-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 17.13vw;
+    position: relative;
+}
+
+.product-card__promo {
+    opacity: 0;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 102%;
+    z-index: 9;
+    border: 0.06vw solid rgba(62, 80, 114, 0.12);
+    border-radius: 1vw;
+    top: -1px;
+    padding: 1.5vw;
+    box-shadow: 0 0.25vw 1.5vw 0 rgba(21, 45, 103, 0.12), 0 0.75vw 2vw 0 rgba(121, 121, 121, 0.12);
+    transition: 0.2s;
+}
+
+.product-card__promo:hover {
+    opacity: 1;
+}
+
+.product-card__balance-block {
+    display: flex;
+    gap: 0.5vw;
+    justify-content: center;
+    margin: 8.09vw 0 0.5vw;
+}
+
+.product-card__promo .btn {
+    margin-top: 5.59vw;
+}
+
+.product-card__balance {
+    display: flex;
+    gap: 0.25vw;
+    align-items: center;
+}
+
+.product-card__promo img {
+    width: 1vw;
+    height: 1vw;
+}
+
+.product-card__balance-title {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 129%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #000;
+}
+
+.product-card__balance {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 143%;
+    text-align: right;
+    color: #000;
+}
+
+.product-card__balance-info {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 129%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: rgba(0, 11, 38, 0.56);
+}
+
+.product-card__img img{
+    border-radius: 1vw;
+    height: 16.88vw;
+    width: 16.88vw;
+}
+
+.product-card__brand{
+    position: absolute;
+    border-radius: 0.63vw;
+    padding: 0.38vw 0.63vw;
+    margin-top: 1.50vw;
+    margin-left: 1.50vw;
+    height: 1.88vw;
+    box-shadow: 0 4px 24px 0 rgba(51, 51, 51, 0.12);
+    background: #fff;
+    font-size: 1.4rem;
+    line-height: 129%;
+    color: rgba(0, 11, 38, 0.72);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.product-card__info{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    height: 5.31vw;
+}
+
+.product-card__text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.31vw;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 125%;
+    color: rgba(0, 11, 38, 0.88);
+}
+
+.product-card__category{
+    color: rgba(0, 11, 38, 0.56);
+}
+
+.product-card__coins{
+    display: flex;
+    gap: 0.50vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 4.19vw;
+}
+
+.product-card__coins img{
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.product-card__price{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+    line-height: 143%;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 100%;
+        height: 48.31vw;
+        gap: 2.08vw;
+    }
+
+    .product-card__img img{
+        width: 100%;
+        height: 35.16vw;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 2.08vw;
+    }
+
+    .product-card__brand {
+        font-size: 2.7154rem;
+        margin: 3.13vw 0 0 3.13vw;
+        border-radius: 1.3vw;
+        padding: 0.78vw 1.3vw;
+        min-width: 6.77vw;
+        height: 3.91vw;
+    }
+
+    .product-card__text {
+        font-size: 3.104rem;
+        gap: 0.65vw;
+    }
+
+    .product-card__coins {
+        gap: 1.04vw;
+    }
+
+    .product-card__coins img {
+        width: 3.13vw;
+        height: 3.13vw;
+    }
+
+    .product-card__price {
+        font-size: 2.7154rem;
+    }
+
+    .product-card__promo {
+        border-radius: 2.08vw;
+        padding: 3.13vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card__balance-title {
+        font-size: 2.7154rem;
+    }
+
+    .product-card__balance-block {
+        gap: 1.04vw;
+        margin: 16.86vw 0 1.04vw;
+    }
+
+    .product-card__balance {
+        font-size: 2.7154rem;
+        gap: 0.52vw;
+    }
+
+    .product-card__balance img {
+        width: 2.08vw;
+        height: 2.08vw;
+    }
+
+    .product-card__balance-info {
+        width: 29.43vw;
+        font-size: 2.7154rem;
+    }
+
+    .product-card__promo .btn {
+        margin-top: 11.65vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .product-card {
+        height: 87.29vw;
+        gap: 3.76vw;
+    }
+
+    .product-card__img img {
+        height: 63.53vw;
+        border-radius: 3.76vw;
+    }
+
+    .product-card__brand {
+        font-size: 4.9185rem;
+        height: 7.06vw;
+        border-radius: 2.35vw;
+        padding: 1.41vw 2.35vw;
+        margin: 5.65vw 0 0 5.65vw;
+    }
+
+    .product-card__text {
+        gap: 1.18vw;
+        font-size: 5.6211rem;
+    }
+
+    .product-card__coins {
+        gap: 1.88vw;
+    }
+
+    .product-card__coins img {
+        width: 5.65vw;
+        height: 5.65vw;
+    }
+
+    .product-card__price {
+        font-size: 4.9185rem;
+    }
+
+    .product-card__promo {
+        border-radius: 3.76vw;
+        padding: 5.65vw;
+    }
+
+    .product-card__balance-title {
+        font-size: 4.9185rem;
+    }
+
+    .product-card__balance-block {
+        gap: 1.88vw;
+        margin: 30.47vw 0 1.88vw;
+    }
+    
+    .product-card__balance {
+        gap: 0.94vw;
+        font-size: 4.9185rem;
+    }
+
+    .product-card__balance img {
+        width: 3.76vw;
+        height: 3.76vw;
+    }
+
+    .product-card__balance-info {
+        font-size: 4.9185rem;
+        width: 50vw;
+    }
+    
+    .product-card__promo .btn {
+        margin-top: 21.06vw;
+    }
+}

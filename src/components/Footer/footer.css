@@ -1,0 +1,92 @@
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4vw;
+    margin-top: 3.69vw;
+    border-top: 0.06vw solid #C4C4C4;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    margin-left: 12.50vw;
+}
+
+.mail, .tel{
+    display: flex;
+    gap:0.50vw;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.mail a, .tel a{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 137%;
+    color: rgba(0, 11, 38, 0.64);
+}
+
+.mail img, .tel img{
+    max-width: 1.50vw;
+    max-height: 1.50vw;
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin-top: 1.3vw;
+        justify-content: center;
+        height: 15.1vw;
+        padding: 3.13vw 0 4.17vw;
+    }
+
+    .contact-info {
+        margin: 0;
+        height: 100%;
+        flex-direction: column;
+        gap: 1.56vw;
+    }
+
+    .mail, .tel {
+        gap: 1.04vw;
+        justify-content: center;
+    }
+
+    .mail a, .tel a {
+        font-size: 3.104rem;
+    }
+
+    .mail img, .tel img {
+        max-width: none;
+        max-height: none;
+        width: 3.13vw;
+        height: 3.13vw;
+    }
+}
+
+@media (max-width: 425px) {
+    footer {
+        margin-top: 9.41vw;
+        height: 27.29vw;
+        padding: 5.65vw 0 7.53vw;
+    }
+
+    .contact-info {
+        gap: 2.82vw;
+    }
+
+    .mail, .tel {
+        gap: 1.88vw;
+    }
+
+    .mail a, .tel a {
+        font-size: 5.6211rem;
+    }
+
+    .mail img, .tel img {
+        width: 5.65vw;
+        height: 5.65vw;
+    }
+}

@@ -1,0 +1,151 @@
+.main__cards{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 1.50vw;
+    margin-top: 3vw;
+    margin: 0 auto;
+}
+
+.card{
+    width: 36.75vw;
+    height: 18.75vw;
+    display: flex;
+    border: 1px solid #C4C4C4;;
+    border-radius: 1vw;
+    background-color: #fff;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 2.50vw;
+    margin-left: 2.50vw;
+}
+.card-container__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.card-container__text h3{
+    color: #000B26;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 0.88vw;
+}
+
+.card-container__text p{
+    text-align: left;
+    color: #000b268f;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.card-container__btn img{
+    width: 3vw;
+    height: 3vw;
+    margin-top: 2.88vw;
+}
+
+.card__img{
+    max-width: 50%;
+}
+
+@media (max-width: 768px) {
+    .main__cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 3.13vw;
+        margin-top: 0;
+        bottom: 15.1vw;
+    }
+
+    .card {
+        width: 44.66vw;
+        height: 36.46vw;
+        border-radius: 2.08vw;
+        border: 0.13vw solid #C4C4C4;
+        padding: 2.6vw;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card-container {
+        margin: 0;
+    }
+
+    .card-container__text h3 {
+        font-size: 4.65495rem;
+        margin-bottom: 1.56vw;
+    }
+
+    .card-container__text p {
+        font-size: 3.1033rem;
+    }
+
+    .card:nth-of-type(1) .card-container__text p {
+        width: 35.68vw;
+    }
+
+    .card-container__btn img {
+        width: 6.25vw;
+        height: 6.25vw;
+        margin-top: 10.42vw;
+    }
+
+    .card__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .card:nth-of-type(1) .card__img {
+        bottom: 1.17vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .main__cards {
+        gap: 5.65vw;
+        bottom: -22vw;
+    }
+
+    .card {
+        width: 80.71vw;
+        height: 65.88vw;
+        border-radius: 3.76vw;
+        border: 0.24vw solid #C4C4C4;
+        padding: 4.71vw;
+    }
+
+    .card-container__text h3 {
+        font-size: 8.43161rem;
+        margin-bottom: 2.82vw;
+    }
+
+    .card-container__text p {
+        font-size: 5.6211rem;
+    }
+
+    .card:nth-of-type(1) .card-container__text p {
+        width: 64.47vw;
+    }
+
+    .card-container__btn img {
+        width: 11.29vw;
+        height: 11.29vw;
+        margin-top: 18.82vw;
+    }
+
+    .card:nth-of-type(1) .card__img {
+        bottom: 2.12vw;
+    }
+
+    html {
+        height: 261.65vw;
+    }
+}

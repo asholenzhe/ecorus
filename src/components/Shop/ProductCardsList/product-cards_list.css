@@ -1,0 +1,23 @@
+.product-cards__list{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    row-gap: 1.5vw;
+    column-gap: 3vw;
+}
+
+@media (max-width: 768px) {
+    .product-cards__list {
+        grid-template-columns:1fr;
+        flex-direction: column;
+        gap: 4.17vw;
+        margin-bottom: 4.17vw;
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .product-cards__list {
+        gap: 7.53vw;
+        margin-bottom: 9.41vw;
+    }
+}
